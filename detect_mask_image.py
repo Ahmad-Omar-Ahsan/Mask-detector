@@ -59,5 +59,6 @@ for i in range(0, detections.shape[2]):
         cv2.putText(image, label, (x_start, y_start -10), cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
         cv2.rectangle(image, (x_start, y_start), (x_end, y_end), color, 2)
 
+#image = cv2.resize(image,(540, 540))
 cv2.imshow('Output', image)
 cv2.waitKey(0)
